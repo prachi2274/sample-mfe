@@ -1,0 +1,22 @@
+[
+    {
+        "remoteName": "admin",
+        "displayName": "Admin Dashboard",
+        "description": "Manage groups and calculators",
+        "routePath": "admin",
+        "remoteEntry": "http://localhost:4201/remoteEntry.json",
+        "exposedModule": "./Routes",
+        "icon" : "admin"
+    }, 
+    {
+        "remoteName": "oxy-pcd-standalone-joule",
+        "displayName": "PCD Dashboard",
+        "description": "Manage Pcd",
+        "routePath": "pcd",
+        "remoteEntry": "http://localhost:4202/remoteEntry.json",
+        "exposedModule": "./Routes",
+        "icon" : "pcd"
+    }
+]
+
+

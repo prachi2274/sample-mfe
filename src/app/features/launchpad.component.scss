@@ -1,0 +1,21 @@
+  .grid {
+        display: grid;
+        /* This creates exactly 2 columns of equal width */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 16px; /* Adds spacing between the cards */
+    }
+
+    .card {
+        border: 1px solid #ccc;
+        padding: 20px;
+        cursor: pointer;
+        border-radius: 8px;
+        background: #fff;
+    }
+
+    /* Optional: Stack cards vertically on small mobile screens */
+    @media (max-width: 600px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
