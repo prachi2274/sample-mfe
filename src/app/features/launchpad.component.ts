@@ -9,17 +9,12 @@ import { HttpClient } from "@angular/common/http";
     standalone: true,
     imports: [CommonModule],
     templateUrl: './launchpad.component.html',
-    styleUrl: './launchpad.component.scss',
-    providers: [MfeLookupService, HttpClient ]
+    styleUrl: './launchpad.component.scss'
 })
 export class LaunchpadComponent {
     mfeService = inject(MfeLookupService);
     router = inject(Router);
     route = inject(ActivatedRoute);
-
-    constructor(){
-        //this.mfeService.loadMfeConfig();
-    }
 
     navigateToApp(appRoutePath: string) {
         this.router.navigate([appRoutePath], { relativeTo: this.route });

@@ -1,21 +1,30 @@
 [
     {
-        "remoteName": "admin",
+        "remoteName": "acs-datascience-ui-mladminfrontend",
         "displayName": "Admin Dashboard",
         "description": "Manage groups and calculators",
         "routePath": "admin",
-        "remoteEntry": "http://localhost:4201/remoteEntry.json",
+        "remoteEntry": "http://localhost:4201/remoteentry.json",
         "exposedModule": "./Routes",
-        "icon" : "admin"
+        "type": "module"
     }, 
     {
         "remoteName": "oxy-pcd-standalone-joule",
         "displayName": "PCD Dashboard",
         "description": "Manage Pcd",
-        "routePath": "pcd",
-        "remoteEntry": "http://localhost:4202/remoteEntry.json",
-        "exposedModule": "./Routes",
-        "icon" : "pcd"
+        "routePath": "pcd-home",
+        "remoteEntry": "http://localhost:4202/remoteentry.json",
+        "exposedModule": "./Home",
+        "type": "component"
+    },
+    {
+        "remoteName": "oxy-pcd-standalone-joule",
+        "displayName": "Degradation Dashboard",
+        "description": "Degradation Dashboard",
+        "routePath": "Degradation",
+        "remoteEntry": "http://localhost:4202/remoteentry.json",
+        "exposedModule": "./Degradation",
+        "type": "component"
     }
 ]
 

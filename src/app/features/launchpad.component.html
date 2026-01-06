@@ -2,7 +2,7 @@
     <h1>OXY Applications</h1>
     <div class="grid" style="margin-top: 50px !important;">
         <!-- The async pipe and track remain the same for Angular -->
-        @for (app of mfeService.mfeConfig | async; track app.remoteName) {
+        @for (app of mfeService.mfeConfig | async; track app.routePath) {
         <div class="card" (click)="navigateToApp(app.routePath)">
             <h4>{{app.displayName}}</h4>
             <p>{{app.description}}</p>

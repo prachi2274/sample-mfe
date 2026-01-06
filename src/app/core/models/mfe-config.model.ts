@@ -6,4 +6,5 @@ export interface MfeConfig {
     remoteEntry: string;
     exposedModule: string;
     icon: string;
+    type: 'module' | 'component';
 }
